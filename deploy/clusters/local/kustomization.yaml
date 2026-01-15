@@ -1,4 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - apps.yaml
+  - envs.yaml
+  - images/flux-demo-repo.yaml
+  - images/flux-demo-policy-prod.yaml
+  - images/flux-demo-update-prod.yaml

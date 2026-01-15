@@ -1,0 +1,4 @@
+images:
+  - name: ghcr.io/cjfochler/flux-demo
+    newTag: v0.0.0 # {"$imagepolicy": "flux-system:flux-demo-prod"}
+
