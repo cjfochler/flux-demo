@@ -14,9 +14,11 @@ spec:
       labels:
         app.kubernetes.io/name: flux-demo
     spec:
+      imagePullSecrets:
+        - name: ghcr-creds
       containers:
         - name: app
-          image: flux-demo:latest
+          image: ghcr.io/cjfochler/flux-demo:PLACEHOLDER_TAG
           imagePullPolicy: IfNotPresent
           ports:
             - name: http

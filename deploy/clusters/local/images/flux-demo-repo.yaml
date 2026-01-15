@@ -6,3 +6,5 @@ metadata:
 spec:
   image: ghcr.io/cjfochler/flux-demo
   interval: 1m0s
+  secretRef:
+    name: ghcr-creds
