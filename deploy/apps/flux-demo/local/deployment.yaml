@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flux-test
+  name: flux-demo
   labels:
-    app.kubernetes.io/name: flux-test
+    app.kubernetes.io/name: flux-demo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: flux-test
+      app.kubernetes.io/name: flux-demo
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: flux-test
+        app.kubernetes.io/name: flux-demo
     spec:
       containers:
         - name: app
-          image: flux-test:latest
+          image: flux-demo:latest
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
