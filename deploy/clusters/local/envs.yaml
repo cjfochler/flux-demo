@@ -20,7 +20,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./deploy/apps/flux-demo/overlays/prod
+  path: ./deploy/apps/flux-demo/prod
   prune: true
   wait: true
   sourceRef:
