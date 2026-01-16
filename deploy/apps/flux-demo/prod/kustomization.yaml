@@ -4,4 +4,4 @@ resources:
   - ../base
 images:
   - name: ghcr.io/cjfochler/flux-demo
-    newTag: v0.0.2 # {"$imagepolicy": "flux-system:flux-demo-prod:tag"}
+    newTag: v0.0.3 # {"$imagepolicy": "flux-system:flux-demo-prod:tag"}
