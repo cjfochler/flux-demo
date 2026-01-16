@@ -5,5 +5,5 @@ resources:
 patchesStrategicMerge:
   - service-nodeport-patch.yaml
 images:
-  - name: flux-demo
+  - name: ghcr.io/cjfochler/flux-demo
     newTag: latest
