@@ -9,6 +9,7 @@ spec:
   prune: true
   wait: true
   timeout: 2m0s
+  targetNamespace: flux-demo
   sourceRef:
     kind: GitRepository
     name: flux-system
@@ -23,6 +24,8 @@ spec:
   path: ./deploy/apps/flux-demo/prod
   prune: true
   wait: true
+  timeout: 2m0s
+  targetNamespace: flux-demo-prod
   sourceRef:
     kind: GitRepository
     name: flux-system
