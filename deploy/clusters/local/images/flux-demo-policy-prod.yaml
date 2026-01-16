@@ -7,7 +7,7 @@ spec:
   imageRepositoryRef:
     name: flux-demo
   filterTags:
-    pattern: '^(?P<version>\d+\.\d+\.\d+)$'
+    pattern: '^v(?P<version>\d+\.\d+\.\d+)$'
     extract: '$version'
   policy:
     semver:
