@@ -4,7 +4,6 @@ resources:
   - ../base
 patchesStrategicMerge:
   - service-nodeport-patch.yaml
-
 images:
   - name: flux-demo
     newTag: latest

@@ -2,7 +2,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - ../base
-
 images:
   - name: ghcr.io/cjfochler/flux-demo
     newTag: v0.0.0 # {"$imagepolicy": "flux-system:flux-demo-prod"}
